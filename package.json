@@ -12,7 +12,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "fm": "prettier --write . && git add -A",
     "prepare": "husky install",
-    "commit": "git cz"
+    "cz": "git add -A && git cz"
   },
   "dependencies": {
     "pinia": "^2.0.23",
