@@ -9,9 +9,11 @@
     "test:e2e": "playwright test",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "fm": "prettier --write ."
   },
   "dependencies": {
+    "husky": "^8.0.2",
     "pinia": "^2.0.23",
     "vue": "^3.2.41",
     "vue-router": "^4.1.5"
@@ -30,10 +32,13 @@
     "eslint-plugin-vue": "^9.3.0",
     "jsdom": "^20.0.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "typescript": "~4.7.4",
     "vite": "^3.1.8",
     "vitest": "^0.24.3",
     "vue-tsc": "^1.0.8"
+  },
+  "husky": {
+    "hooks": {}
   }
 }
